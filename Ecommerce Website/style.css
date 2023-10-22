@@ -1,0 +1,418 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'royal_luxury';
+    src: url('/font/royal_luxury/WEB/ROYALERegular.woff2') format('woff2'),
+         url('/font/royal_luxury/WEB/ROYALERegular.woff') format('woff');
+}
+/* - */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+:root {
+    --accent : #ACB387;
+    --accent2 : #94B5C0;
+    --text1 : #4D5147;
+    --text2 : #303B52;
+    --background : #EEE2DE;
+    --highlight : #FFA34D;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+}
+
+
+
+/*------------------------- NavBar-------------------- */
+nav {
+    background-color: var(--background);
+    z-index: 999;
+    position: fixed;
+    height: 64px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+}
+#logo h2 {
+    font-family: 'royal_luxury', 'Poppins';
+    color: var(--text1);
+    font-size: 3rem;
+    font-weight: 800;
+}
+#logo a{
+    text-decoration: none;
+}
+.menu-list a{
+    text-decoration: none;
+    color: var(--text1);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 2rem;
+    transition: color 0.2s ease-in;
+
+}
+.menu-list a:hover {
+    color: var(--highlight);
+}
+.menu-icon i {
+    font-size: 3.2rem;
+    margin-left: 3rem;
+    transition:  0.2s ease-in;
+}
+.menu-icon i:hover {
+    transform: scale(1.1);
+}
+
+
+/*--------------- Hero --------------- */
+.main-hero {
+    margin: auto;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.main-left {
+    position: relative;
+
+    background-color: var(--accent2);
+    color: var(--text2);
+    height: 55rem;
+    width: 60rem;
+    border-radius: 4rem;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.main-left h2{
+    line-height: 1.1;
+    font-size: 5.5rem;
+    font-weight: 500;
+}
+.main-left h4 {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.main-left a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--text2);
+    background-color: var(--highlight);
+    padding: 1.5rem 2.5rem;
+    border-radius: 2rem;
+    transition: 0.2s ease-in;
+}
+.main-left a:hover{
+    color: var(--accent2);
+    background-color: var(--text2);
+    transform: scale(1.03);
+}
+.main-right {
+    /* background-color: var(--accent); */
+    background-image: url(/img/sweet.jpg);
+    background-position: top;
+    background-size: cover;
+    color: var(--text1);
+    height: 55rem;
+    width: 70rem;
+    border-radius: 4rem;
+}
+/* --------Banner-------- */
+.banner {
+    color: var(--text1);
+    margin: auto;
+    background-color: var(--accent);
+    height: 12rem;
+    border-radius: 2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+}
+
+.banner-icon i {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.banner-item-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ---------------ABOUT US-------------------- */
+.about-us {
+    color: var(--text1);
+    width: 90%;
+    height: 55vh;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-text {
+    width: 50%;
+    height: 100%;
+}
+.about-text h2 {
+    color: var(--highlight);
+    font-size: 5rem;
+    font-weight: 500;
+}
+.about-text p {
+    font-size: 2rem;
+}
+.about-img {
+   width: 40%;
+   height: 100%;
+   background-image: url('./img/sweet2.jpg');
+   background-position: center;
+   background-size: cover;
+   border-radius: 3rem;
+}
+
+/*------------------- Latest Arrival--------------- */
+.arrivals {
+    color: var(--text2);
+    background-color: var(--accent2);
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+.arrivals h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+.arrival-items {
+    margin-top : 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product-card {
+    color: var(--text2);
+    width: 30rem;
+    height: 40rem;
+    background-color: var(--background);
+    padding:1.5rem;
+    border-radius: 1rem;
+    box-shadow:  11px 11px 61px #7c98a1,
+             -11px -11px 61px #acd2df;
+}
+.product-card img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 50%;
+    transition: 0.5s ease-in-out;
+}
+.product-card img:hover {
+    box-shadow:  11px 11px 61px #7c98a1,
+    -11px -11px 61px #acd2df;    transform: translateY(-30px);
+}
+.product-card h4 {
+    color: var(--highlight);
+    font-size : 2.4rem;
+    font-weight: 500;
+    margin : 0.5rem 0;
+}  
+.product-card h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+} 
+.product-footer {
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--text2);
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-card button{
+    background-color: var(--highlight);
+    color: var(--text2);
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    transition: 0.2s ease-in;
+}
+.product-card button:hover {
+    color: var(--accent2);
+    background-color: var(--text2);
+}
+/* ----------------Adv------------- */
+.adv {
+    width: 90%;
+    height: 20vw;
+    margin:10rem auto;
+    border-radius: 3rem;
+    background-image: url('./img/image0_0.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 2.5rem;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.adv h2 {
+    font-family: 'royal_luxury','Poppins', sans-serif;
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--text1);
+}
+/* ----------------FOOTER------------------ */
+.footer {
+    color: var(--text2);
+    width: 100%;
+    height: 30vh;
+    padding: 3rem;
+    background-color: var(--accent2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.first-section {
+    width: 25%;
+}
+.first-section h3 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+
+}
+.first-section p {
+    font-size: 1.5rem;
+}
+
+.second-section {
+    text-align: left;
+    width: 25%;
+}
+.second-section h3 {
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+}
+.second-section ul li{
+    display: block;
+    text-decoration: none;
+}
+.second-section ul li a {
+    color: var(--text2);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.second-section ul li a:hover {
+    color: var(--background);
+}
+.third-section {
+    width: 25%;
+}
+.third-section h3{
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+}
+.third-section button {
+    font-size: 1.5rem;
+    font-family: 400;
+    padding: 1rem 1.5rem;
+    background-color: var(--text2);
+    color: var(--accent2);
+    border: none;
+    border-radius: 2rem;
+    display: block;
+    margin-top:2rem;
+    transition: all 0.2s ease-in-out;
+}
+.third-section button:hover {
+    transform: scale(1.1);
+}
+.third-section input[type=email] {
+    color: var(--text2);
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--text2);
+    font-size: 1.5rem;
+}
+.third-section input[type=email]:focus {
+    border: none;
+}
+
+.fourth-section {
+    width: 25%;
+}
+.fourth-section ul {
+    list-style-type: none;
+}
+.fourth-section ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.fourth-section ul li a{
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+.fourth-section ul li:hover {
+    transform: scale(1.1);
+}
+.fourth-section h3{
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+}
+.phone-number a{
+    text-decoration: none;
+    color: var(--text2);
+    font-size: 1.5rem;
+}
+.address a{
+    text-decoration: none;
+    color: var(--text2);
+    font-size: 1.5rem;
+}
+.footer-msg {
+    color: var(--text1);
+    width: 100%;
+    height: 3rem;
+    background-color: var(--accent);
+}
+
+.footer-msg {
+    display: inline-flex;   
+    justify-content: center;
+    align-items: center;
+}

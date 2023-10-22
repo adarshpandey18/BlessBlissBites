@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'royal_luxury';
+    src: url('/font/royal_luxury/WEB/ROYALERegular.woff2') format('woff2'),
+         url('/font/royal_luxury/WEB/ROYALERegular.woff') format('woff');
+}
+/* - */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+:root {
+    --accent : #ACB387;
+    --accent2 : #94B5C0;
+    --text1 : #4D5147;
+    --text2 : #303B52;
+    --background : #EEE2DE;
+    --highlight : #FFA34D;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+}
+
+
+
+/*------------------------- NavBar-------------------- */
+nav {
+    background-color: var(--background);
+    z-index: 999;
+    position: fixed;
+    height: 64px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+}
+#logo h2 {
+    font-family: 'royal_luxury', 'Poppins';
+    color: var(--text1);
+    font-size: 3rem;
+    font-weight: 800;
+}
+#logo a{
+    text-decoration: none;
+}
+.menu-list a{
+    text-decoration: none;
+    color: var(--text1);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 2rem;
+    transition: color 0.2s ease-in;
+
+}
+.menu-list a:hover {
+    color: var(--highlight);
+}
+.menu-icon i {
+    font-size: 3.2rem;
+    margin-left: 3rem;
+    transition:  0.2s ease-in;
+}
+.menu-icon i:hover {
+    transform: scale(1.1);
+}
+/* --------------------------------------------- */
+
+.product-detail {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text2);
+}
+.product-images {
+    width: 60%;
+    padding: 10rem;
+}
+.product-images img {
+    width: 100%;
+    border-radius: 3rem;
+}
+.product-text {
+    width: 40%;
+}
+.product-text .product-headline h2 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.product-text .product-manufacturer {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--accent2);
+}
+.product-text .product-manufacturer span {
+    color: var(--highlight);
+}
+.product-rating {
+    font-size: 1.4rem;
+}
+.product-price {
+    border-top: 1px solid var(--text2);
+    font-size: 3rem;
+}
+.product-info-box {
+    display: flex;
+}
+.product-info-box h5 {
+    font-size: 1.5rem;
+}
+.delivery-time,.quality-assured {
+    background-color: var(--accent2);
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+}
+.product-info-box h6 {
+    font-size: 1rem;
+    color: var(--background );
+    text-align: center;
+
+}
+.quality-assured {
+    margin-left: 1rem;
+}
+.description-title {
+    font-size: 2rem;
+    border-top: 1px solid var(--text2);
+    margin-top: 2rem;
+}
+.description-para {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.add-cart {
+    border-top: 1px solid var(--text2);
+    margin: 2rem 0rem;
+    padding-top:1rem
+}
+.add-cart button {
+    background-color: var(--accent);
+    color: var(--text1);
+    font-size: 2rem;
+    padding:1rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+.add-cart button:hover {
+    color: var(--accent);
+    background-color: var(--text1);
+    transform: scale(1.1);
+}
+
+
+/*------------------- Footer -------------------------*/
+.footer {
+    color: var(--text2);
+    width: 100%;
+    height: 30vh;
+    padding: 3rem;
+    background-color: var(--accent2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.first-section {
+    width: 25%;
+}
+.first-section h3 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+
+}
+.first-section p {
+    font-size: 1.5rem;
+}
+
+.second-section {
+    text-align: left;
+    width: 25%;
+}
+.second-section h3 {
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+}
+.second-section ul li{
+    display: block;
+    text-decoration: none;
+}
+.second-section ul li a {
+    color: var(--text2);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.second-section ul li a:hover {
+    color: var(--background);
+}
+.third-section {
+    width: 25%;
+}
+.third-section h3{
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+}
+.third-section button {
+    font-size: 1.5rem;
+    font-family: 400;
+    padding: 1rem 1.5rem;
+    background-color: var(--text2);
+    color: var(--accent2);
+    border: none;
+    border-radius: 2rem;
+    display: block;
+    margin-top:2rem;
+    transition: all 0.2s ease-in-out;
+}
+.third-section button:hover {
+    transform: scale(1.1);
+}
+.third-section input[type=email] {
+    color: var(--text2);
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--text2);
+    font-size: 1.5rem;
+}
+.third-section input[type=email]:focus {
+    border: none;
+}
+
+.fourth-section {
+    width: 25%;
+}
+.fourth-section ul {
+    list-style-type: none;
+}
+.fourth-section ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.fourth-section ul li a{
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+.fourth-section ul li:hover {
+    transform: scale(1.1);
+}
+.fourth-section h3{
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid var(--text2);
+    margin-bottom: 3rem;
+}
+.phone-number a{
+    text-decoration: none;
+    color: var(--text2);
+    font-size: 1.5rem;
+}
+.address a{
+    text-decoration: none;
+    color: var(--text2);
+    font-size: 1.5rem;
+}
+.footer-msg {
+    color: var(--text1);
+    width: 100%;
+    height: 3rem;
+    background-color: var(--accent);
+}
+
+.footer-msg {
+    display: inline-flex;   
+    justify-content: center;
+    align-items: center;
+}
